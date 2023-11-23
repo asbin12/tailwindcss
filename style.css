@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Outfit&display=swap");
+@tailwind base;
+@tailwind components;
+.cart-width {
+  @apply w-[276px] space-y-6;
+}
+.image-h-w {
+  @apply w-[276px] h-[160px];
+}
+.cart-middle-section {
+  @apply flex-col space-y-4;
+}
+.cart-middle-section-first-p{
+    @apply w-[275px] h-[60px] font-primary font-semibold text-2xl text-white
+}
+.cart-middle-section-second-p{
+   @apply w-[275px] h-[84px] font-primary font-normal text-lg text-white
+}
+.btn{
+    @apply h-auto w-auto flex flex-row gap-x-3 rounded
+}
+.btn-img{
+    @apply w-[24px] h-[24px]
+}
+.btn-txt{
+    @apply h-auto w-auto font-primary font-bold text-lg text-justify text-white
+}
+@tailwind utilities;
+
+/* .text-vic {
+  @apply text-yellow-800 bg-green-400;
+} */
+/* .btn {
+  @apply bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
+} */
