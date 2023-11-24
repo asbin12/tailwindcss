@@ -32,7 +32,7 @@
   @apply text-white font-primary text-5xl font-bold  text-left;
 }
 .customer-cart-layout {
-  @apply w-[373px] h-[80px] px-8 flex items-center gap-6 bg-white;
+  @apply py-5 px-8 flex items-center gap-6 bg-white;
 }
 .customer-cart__paragraph {
   @apply font-primary font-semibold text-xl text-gray-950 uppercase;
