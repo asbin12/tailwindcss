@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Outfit&display=swap");
+@tailwind base;
+@tailwind components;
+.cart-width {
+  @apply space-y-6;
+}
+.image-h-w {
+  @apply w-[276px] h-[160px];
+}
+.cart-middle-section {
+  @apply space-y-4;
+}
+.cart-middle-section-first-p {
+  @apply w-[275px] h-[60px] font-primary font-semibold text-2xl text-white;
+}
+.cart-middle-section-second-p {
+  @apply w-[275px] font-primary font-normal text-lg text-white;
+}
+.btn {
+  @apply flex flex-row gap-x-3 rounded;
+}
+.btn-img {
+  @apply w-[24px] h-[24px];
+}
+.btn-txt {
+  @apply font-primary font-bold text-lg text-justify text-white;
+}
+.section__top-paragraph {
+  @apply text-white font-primary text-base font-semibold text-left uppercase;
+}
+.section__title {
+  @apply text-white font-primary text-5xl font-bold  text-left;
+}
+.customer-cart-layout {
+  @apply w-[373px] h-[80px] px-8 flex items-center gap-6 bg-white;
+}
+.customer-cart__paragraph {
+  @apply font-primary font-semibold text-xl text-gray-950 uppercase;
+}
+@tailwind utilities;
+
+/* .text-vic {
+  @apply text-yellow-800 bg-green-400;
+} */
+/* .btn {
+  @apply bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
+} */
