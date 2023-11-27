@@ -37,6 +37,9 @@
 .customer-cart__paragraph {
   @apply font-primary font-semibold text-xl text-gray-950 uppercase;
 }
+.featured-project__cart-paragraph{
+  @apply font-primary font-semibold text-lg text-white;
+}
 @tailwind utilities;
 
 /* .text-vic {
