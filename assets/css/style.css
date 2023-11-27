@@ -29,7 +29,7 @@
   @apply text-white font-primary text-base font-semibold text-left uppercase;
 }
 .section__title {
-  @apply text-white font-primary text-5xl font-bold  text-left;
+  @apply text-white font-primary text-4.5xl font-bold  text-left;
 }
 .customer-cart-layout {
   @apply py-5 px-8 flex items-center gap-6 bg-white;
