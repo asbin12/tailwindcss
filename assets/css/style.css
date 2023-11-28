@@ -19,17 +19,20 @@
 .btn {
   @apply flex flex-row gap-x-3 rounded;
 }
+.btn--orange {
+  @apply flex flex-row gap-x-3 bg-[#F80102] py-4 px-[30px] items-center;
+}
 .btn-img {
   @apply w-[24px] h-[24px];
 }
 .btn-txt {
-  @apply font-primary font-bold text-lg text-justify text-white;
+  @apply font-primary font-semibold text-lg text-justify text-white;
 }
 .section__top-paragraph {
   @apply text-white font-primary text-base font-semibold text-left uppercase;
 }
 .section__title {
-  @apply text-white font-primary text-4.5xl font-bold  text-left;
+  @apply text-white font-primary text-4.5xl font-semibold  text-left;
 }
 .customer-cart-layout {
   @apply py-5 px-8 flex items-center gap-6 bg-white;
@@ -37,11 +40,33 @@
 .customer-cart__paragraph {
   @apply font-primary font-semibold text-xl text-gray-950 uppercase;
 }
-.featured-project__cart-paragraph{
+.featured-project__cart-paragraph {
   @apply font-primary font-semibold text-lg text-white;
 }
+.our-brochures__pdf-name {
+  @apply font-primary font-semibold text-1.5xl text-white;
+}
+.news-and-event__box {
+  @apply uppercase font-primary font-normal text-sm text-center border border-white px-[10px] rounded-[3px] text-white;
+}
+.news-and-event__text {
+  @apply font-primary font-normal text-sm text-white;
+}
+.news-and-events__heading {
+  @apply font-primary font-semibold text-2xl text-white;
+}
+.footer-cart__heading-text {
+  @apply font-primary font-semibold text-2xl text-white uppercase;
+}
+.footer-cart__body-text {
+  @apply font-primary font-normal text-sml text-white;
+}
+
 @tailwind utilities;
 
+/* .slide {
+  @apply w-[270px]  absolute  transition-transform;
+} */
 /* .text-vic {
   @apply text-yellow-800 bg-green-400;
 } */
