@@ -65,7 +65,7 @@
 @tailwind utilities;
 
 /* .slide {
-  @apply w-[270px]  absolute  transition-transform;
+  @apply w-[270px]  absolute;
 } */
 /* .text-vic {
   @apply text-yellow-800 bg-green-400;
