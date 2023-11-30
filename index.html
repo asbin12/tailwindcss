@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Section 3</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <style>
+      /* css for swiper */
       .swiper {
-        /* width: 100%;
-        height: 100%; */
-        width: auto;
-        height: auto;
-        margin-left: 0;
+        width: 100%;
+        height: 100%;
       }
 
       .swiper-slide {
         font-size: 18px;
         display: flex;
-        width: auto;
       }
       .swiper-slide img {
         display: block;
+      }
+      .swiper-pagination {
+        position: static;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #f80102;
       }
     </style>
   </head>
@@ -114,7 +113,7 @@
       class="bg-cover bg-center h-screen"
     >
       <div class="container max-w-screen-xl mx-auto space-y-14 py-24">
-        <div class="space-y-3">
+        <div class="flex flex-col gap-x-3">
           <p class="section__top-paragraph">our customers</p>
           <h2 class="section__title">Who We Work For</h2>
         </div>
@@ -221,25 +220,61 @@
             />
           </div>
         </div>
-        <div class="bg-white py-10 pl-[60px] flex flex-col gap-y-6">
-          <p class="w-[457px] font-primary font-semibold text-lg">
-            "I have been a customer of Weldlok for over 5 years now, in this
-            time I have been nothing but pleased with the service and quality.
-            Weldlok always goes above and beyond my expectations.
-          </p>
-          <div class="flex gap-x-6">
-            <img src="assets/image/testi-img.png" alt="Testimonials Image" />
-            <div>
-              <p
-                class="font-primary font-semibold text-xl text-[#F80102] text-center"
-              >
-                PAUL MIRABITO
+        <div class="swiper mySecondSwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide bg-white py-10 pl-[60px] flex flex-col gap-y-6"
+            >
+              <p class="w-[457px] font-primary font-semibold text-lg">
+                "I have been a customer of Weldlok for over 5 years now, in this
+                time I have been nothing but pleased with the service and
+                quality. Weldlok always goes above and beyond my expectations.
               </p>
-              <p
-                class="font-primary font-normal text-base text-[#687076] text-center"
-              >
-                Murray Engineering
+              <div class="flex gap-x-6">
+                <img
+                  src="assets/image/testi-img.png"
+                  alt="Testimonials Image"
+                />
+                <div>
+                  <p
+                    class="font-primary font-semibold text-xl text-[#F80102] text-center"
+                  >
+                    PAUL MIRABITO
+                  </p>
+                  <p
+                    class="font-primary font-normal text-base text-[#687076] text-center"
+                  >
+                    Murray Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide bg-white py-10 pl-[60px] flex flex-col gap-y-6"
+            >
+              <p class="w-[457px] font-primary font-semibold text-lg">
+                "I have been a customer of Weldlok for over 5 years now, in this
+                time I have been nothing but pleased with the service and
+                quality. Weldlok always goes above and beyond my expectations.
               </p>
+              <div class="flex gap-x-6">
+                <img
+                  src="assets/image/testi-img.png"
+                  alt="Testimonials Image"
+                />
+                <div>
+                  <p
+                    class="font-primary font-semibold text-xl text-[#F80102] text-center"
+                  >
+                    PAUL MIRABITO
+                  </p>
+                  <p
+                    class="font-primary font-normal text-base text-[#687076] text-center"
+                  >
+                    Murray Engineering
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -248,7 +283,7 @@
     <!-- Featured Section -->
     <section class="bg-gray-700">
       <div
-        class="container max-w-screen-xl flex flex-col gap-y-3 mx-auto space-y-14 py-24"
+        class="container max-w-screen-xl flex flex-col gap-y-14 mx-auto py-24"
       >
         <div class="flex justify-between">
           <div class="flex flex-col gap-y-4">
@@ -260,47 +295,98 @@
             <p class="btn-txt">Learn More About Us</p>
           </div>
         </div>
-        <div class="flex gap-x-6">
-          <img
-            src="assets/image/feat-project.png"
-            alt="featured_product"
-            class="h-[500px] w-[676px]"
-          />
-          <div class="px-10 flex flex-col gap-y-[27px] py-6">
-            <h3
-              class="w-[396px] font-primary font-semibold text-3.5xl text-white"
-            >
-              Central Taiwan Innovation & Research Park
-            </h3>
-            <div class="border-y border-white">
-              <div class="flex gap-x-4 border-b border-white py-[9px]">
-                <p class="featured-project__cart-paragraph">Location:</p>
-                <p class="featured-project__cart-paragraph">Nantou, Taiwan</p>
-              </div>
-              <div class="flex gap-x-4 border-b border-white py-[9px]">
-                <p class="featured-project__cart-paragraph">Clients:</p>
-                <p class="featured-project__cart-paragraph pl-4">
-                  Central Taiwan Innovation<br />
-                  & Research Park
+        <div class="swiper mySecondSwiper">
+          <div class="swiper-wrapper">
+            <div class="flex gap-x-6 swiper-slide">
+              <img
+                src="assets/image/feat-project.png"
+                alt="featured_product"
+                class="h-[500px] w-[676px]"
+              />
+              <div class="px-10 flex flex-col gap-y-[27px] py-6">
+                <h3
+                  class="w-[396px] font-primary font-semibold text-3.5xl text-white"
+                >
+                  Central Taiwan Innovation & Research Park
+                </h3>
+                <div class="border-y border-white">
+                  <div class="flex gap-x-4 border-b border-white py-[9px]">
+                    <p class="featured-project__cart-paragraph">Location:</p>
+                    <p class="featured-project__cart-paragraph">
+                      Nantou, Taiwan
+                    </p>
+                  </div>
+                  <div class="flex gap-x-4 border-b border-white py-[9px]">
+                    <p class="featured-project__cart-paragraph">Clients:</p>
+                    <p class="featured-project__cart-paragraph pl-4">
+                      Central Taiwan Innovation<br />
+                      & Research Park
+                    </p>
+                  </div>
+                </div>
+                <p
+                  class="w-[388px] font-primary font-normal text-lg text-white"
+                >
+                  Bio-architecture Formosana, an architectural firm known for
+                  their commitment to eco-friendly buildings, achieved the
+                  highest grade of Taiwan’s green building label with project.
                 </p>
+                <div class="btn">
+                  <img src="assets/image/arrow.png" alt="" class="btn-img" />
+                  <p class="btn-txt">Read Full Case Study</p>
+                </div>
               </div>
             </div>
-            <p class="w-[388px] font-primary font-normal text-lg text-white">
-              Bio-architecture Formosana, an architectural firm known for their
-              commitment to eco-friendly buildings, achieved the highest grade
-              of Taiwan’s green building label with project.
-            </p>
-            <div class="btn">
-              <img src="assets/image/arrow.png" alt="" class="btn-img" />
-              <p class="btn-txt">Read Full Case Study</p>
+            <div class="flex gap-x-6 swiper-slide">
+              <img
+                src="assets/image/feat-project.png"
+                alt="featured_product"
+                class="h-[500px] w-[676px]"
+              />
+              <div class="px-10 flex flex-col gap-y-[27px] py-6">
+                <h3
+                  class="w-[396px] font-primary font-semibold text-3.5xl text-white"
+                >
+                  Central Taiwan Innovation & Research Park
+                </h3>
+                <div class="border-y border-white">
+                  <div class="flex gap-x-4 border-b border-white py-[9px]">
+                    <p class="featured-project__cart-paragraph">Location:</p>
+                    <p class="featured-project__cart-paragraph">
+                      Nantou, Taiwan
+                    </p>
+                  </div>
+                  <div class="flex gap-x-4 border-b border-white py-[9px]">
+                    <p class="featured-project__cart-paragraph">Clients:</p>
+                    <p class="featured-project__cart-paragraph pl-4">
+                      Central Taiwan Innovation<br />
+                      & Research Park
+                    </p>
+                  </div>
+                </div>
+                <p
+                  class="w-[388px] font-primary font-normal text-lg text-white"
+                >
+                  Bio-architecture Formosana, an architectural firm known for
+                  their commitment to eco-friendly buildings, achieved the
+                  highest grade of Taiwan’s green building label with project.
+                </p>
+                <div class="btn">
+                  <img src="assets/image/arrow.png" alt="" class="btn-img" />
+                  <p class="btn-txt">Read Full Case Study</p>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <div class="pl-[556px] flex gap-x-[10px]">
+        <div class="swiper-pagination"></div>
+
+        <!-- <div class="pl-[556px] flex gap-x-[10px]">
           <div class="h-[14px] w-[14px] bg-[#F80102] rounded-full"></div>
           <div class="h-[14px] w-[14px] rounded-full bg-[#D9D9D933]"></div>
           <div class="h-[14px] w-[14px] rounded-full bg-[#D9D9D933]"></div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- our brochures section -->
@@ -360,21 +446,17 @@
               </div>
             </div>
             <!-- this div have button on it -->
-            <div class="btn--orange mr-[229px]">
+            <div class="btn--orange mr-auto">
               <img src="assets/image/arrow.png" alt="" class="btn-img" />
-              <p class="btn-txt font-outfit">View All Brochures</p>
+              <p class="btn-txt font-outfit text-justify">View All Brochures</p>
             </div>
           </div>
           <!-- second part of div -->
 
-          <div class="swiper myswiper">
-            <div class="swiper-wrapper flex my-7 gap-x-6">
+          <div class="swiper mySwiper my-7">
+            <div class="swiper-wrapper flex gap-x-6">
               <div class="swiper-slide flex flex-col gap-y-6">
-                <img
-                  src="assets/image/cart-1.png"
-                  alt=""
-                  class="h-[339px] w-[270px]"
-                />
+                <img src="assets/image/cart-1.png" alt="" class="" />
                 <p class="font-primary font-semibold text-2.5xl text-white">
                   Mild Steel Diamond<br />
                   Grating
@@ -385,11 +467,7 @@
                 </div>
               </div>
               <div class="swiper-slide flex flex-col gap-y-6">
-                <img
-                  src="assets/image/cart-2.png"
-                  alt=""
-                  class="h-[339px] w-[270px]"
-                />
+                <img src="assets/image/cart-2.png" alt="" class="" />
                 <p class="font-primary font-semibold text-2.5xl text-white">
                   Mild Steel Stair<br />
                   Treads
@@ -400,11 +478,7 @@
                 </div>
               </div>
               <div class="swiper-slide flex flex-col gap-y-6">
-                <img
-                  src="assets/image/cart-3.png"
-                  alt=""
-                  class="h-[339px] w-[270px]"
-                />
+                <img src="assets/image/cart-3.png" alt="" class="" />
                 <p class="font-primary font-semibold text-2.5xl text-white">
                   Aluminium<br />
                   Stair Treads
@@ -415,11 +489,10 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
         <!-- last and down div with colors div -->
-        <div class="flex">
+        <div class="flex pr-[129px]">
           <div class="w-[475px] h-[5px] bg-[#F80102]"></div>
           <div class="flex-grow bg-[#D9D9D9]"></div>
         </div>
