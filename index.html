@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
     <style>
       /* css for swiper */
       .swiper {
@@ -29,9 +33,125 @@
       .swiper-pagination-bullet-active {
         background-color: #f80102;
       }
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: static !important;
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
     </style>
   </head>
   <body>
+    <!-- landing page -->
+    <header class=" bg-cover bg-center h-[100vh]" style="background-image: url('assets/image/Landing-Page.png') ">
+      <div class="container mx-auto relative">
+          <div class="w-[3.75rem] border border-[#F80102] absolute top-[120.49px] left-[409.5px]"></div>
+        <nav class="flex justify-between items-center px-[8.625rem] py-10 border-b border-white">
+        <img src="assets/image/logo.png"/>
+        <ul class="flex gap-x-[1.125rem]">
+          <li ><a href="#" class=" no-underline footer-cart__body-text" >Home</a></li>
+          <li>
+            <a href="#" class=" no-underline footer-cart__body-text" >Our Products <i class="fa fa-caret-down"></i> </a>
+          </li>
+          <li>
+            <a href="#" class=" no-underline footer-cart__body-text" >Customers <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="#" class=" no-underline footer-cart__body-text" >About US <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="#" class=" no-underline footer-cart__body-text" >Contact Us</a>
+          </li>
+        </ul>
+      <div class=" w-[11.25rem] flex justify-between">
+        <i class="fa fa-phone border text-white border-white rounded-full p-2"></i>
+        <p class="font-primary font-extrabold text-xl leading-[1.7075rem] text-white">1800 935 356</p>
+      </div>
+    </nav>
+    <div class="flex flex-col gap-y-8 justify-center items-center pt-[94px] px-[138px]">
+      <h1 class="font-primary font-semibold text-6xl leading-[70px] text-center text-white px-[5.9375rem]">
+        High quality, reliable and proven products and systems
+      </h1>
+      <p class="font-outfit font-normal text-xl leading-8 text-center text-white">
+        The Weldlok brand guarantees the right solution for all customers.
+      </p>
+      <div class=" btn--orange  ">
+        <img src="assets/image/arrow.png" alt="Arrow Icon" />
+        <p class="btn-txt">Find Out More</p>
+      </div>
+    </div>
+    </div>
+    <div class="text-white flex justify-between px-[133px]">
+      <div class="flex flex-col relative">
+       <span class="flex gap-x-4 items-center bg-white py-4 pl-[23.9px] pr-[92.3px] ">
+         <img src="assets/image/icon1.png" alt="">
+         <p class="font-primary font-semibold text-[1.375rem] leading-5 text-black uppercase">industrial</p>
+       </span>
+       <img src="assets/image/indust.png" alt="">
+       <img src="assets/image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
+      </div>
+      <div class="flex flex-col relative">
+       <span class="flex gap-x-4 items-center bg-white py-4 pl-[23.9px] pr-[92.3px] ">
+         <img src="assets/image/icon2.png" alt="">
+         <p class="font-primary font-semibold text-[1.375rem] leading-5 text-black uppercase">civil</p>
+       </span>
+       <img src="assets/image/civil-landing.png" alt="">
+       <img src="assets/image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
+      </div>
+      <div class="flex flex-col relative">
+       <span class="flex gap-x-4 items-center bg-white py-4 pl-[23.9px] pr-[92.3px] ">
+         <img src="assets/image/icon3.png" alt="">
+         <p class="font-primary font-semibold text-[1.375rem] leading-5 text-black uppercase">aRCHITECTURAL</p>
+       </span>
+       <img src="assets/image/archi-landing.png" alt="">
+       <img src="assets/image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
+      </div>
+   
+     </div>
+  </div>
+  </header>
+    <!-- section 2nd  -->
+    <section class="bg-black">
+      <div class="container max-w-screen-xl py-24 flex gap-x-[7.8125rem] mx-auto">
+              <img src="assets/image/secondpage.png" alt="industry image" />
+            <div class="flex flex-col gap-y-8 text-white pt-[1.625rem]">
+              <div class="flex flex-col gap-y-3">
+                <p class=" section__top-paragraph ">about weldlok</p>
+                <p class="font-primary font-bold text-3xl leading-10 text-white pr-[8.25rem]">
+                  Weldlok and Balltube: <br />Trusted Australian brands for 60+
+                  years, serving infrastructure, mining, industrial, civil, and
+                  fabrication.
+                </p>
+              </div>
+                <p class="font-primary font-medium text-lg text-white pr-[8.25rem]">
+                  We are specialists in the design and supply of high quality,
+                  durable grating, industrial and modular handrail, steel flooring,
+                  FRP flooring, and drainage grates and covers.
+                </p>
+              <div class="flex gap-x-[26px] ">
+                <div class="flex flex-col gap-y-4">
+                  <p class="about-wedlock__numeric-value">60+</p>
+                  <p class="about-wedlock__numeric-value-text">years  of Experience</p>
+                </div>
+                <div class="flex flex-col gap-y-4">
+                  <p class="about-wedlock__numeric-value">450</p>
+                  <p class="about-wedlock__numeric-value-text">Qualified Employees</p>
+                </div>
+                <div class="flex flex-col gap-y-4">
+                  <p class="about-wedlock__numeric-value">800+</p>
+                  <p class="about-wedlock__numeric-value-text">satisfied customers</p>
+                </div>
+              </div>
+              <div class=" btn--orange ">
+                <img src="assets/image/arrow.png" alt="Arrow Icon" />
+                <p class="btn-txt">Learn More About Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- section 3rd our solutions -->
     <section class="bg-gray-700">
       <div class="container max-w-screen-xl mx-auto space-y-14 py-24">
@@ -211,16 +331,16 @@
             <img
               src="assets/image/arrow-right.png"
               alt="arrow"
-              class="p-[2px] bg-[#F80102]"
+              class="p-[2px] bg-[#F80102] swiper-button-prev"
             />
             <img
               src="assets/image/arrow-right.png"
               alt="arrow"
-              class="p-[2px] rotate-180 bg-[#F80102]"
+              class="p-[2px] rotate-180 bg-[#F80102] swiper-button-next"
             />
           </div>
         </div>
-        <div class="swiper mySecondSwiper">
+        <div class="swiper myTestimonialSwiper">
           <div class="swiper-wrapper">
             <div
               class="swiper-slide bg-white py-10 pl-[60px] flex flex-col gap-y-6"
@@ -280,6 +400,19 @@
         </div>
       </div>
     </section>
+     <!-- request a quote section -->
+     <section class=" bg-[#000000CC] pt-2">
+      <div class="container max-w-screen-xl py-[96px] px-[99px] items-center flex gap-x-[37px]"  style="background-image: url(https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4);">
+        <h2 class="flex flex-col capitalize section__title w-[667px]">
+          <span>Elevate Your Infrastructure</span>
+          <span class="text-[#F80102]">with our Premium Solutions!</span>
+            </h2>
+            <div class="btn--orange">
+              <img src="assets/image/arrow.png" alt="" class="btn-img" />
+              <p class="btn-txt">Request A Quote</p>
+            </div>
+</div>
+</section>
     <!-- Featured Section -->
     <section class="bg-gray-700">
       <div
@@ -389,6 +522,7 @@
         </div> -->
       </div>
     </section>
+     
     <!-- our brochures section -->
     <section class="bg-[#232323]">
       <div class="container pl-[138px] flex flex-col gap-y-14 mx-auto py-24">
@@ -618,10 +752,10 @@
       class="bg-cover bg-center bg-[#303032]"
     >
       <div
-        class="container max-w-screen-xl flex flex-col gap-y-16 mx-auto space-y-14 py-24"
+        class="container max-w-screen-xl flex flex-col gap-y-16 mx-auto  py-24"
       >
         <!-- div with heading button and paragraph -->
-        <div class="flex gap-x-[320px] border-b border-white">
+        <div class="flex justify-between items-center border-b border-white">
           <div class="flex flex-col gap-y-3">
             <p class="section__top-paragraph">enquire now</p>
             <h2 class="flex flex-col capitalize section__title">
@@ -629,25 +763,25 @@
               <span class="text-[#F80102]">on products and services</span>
             </h2>
           </div>
-          <div class="btn--orange my-[70px]">
+          <div class="btn--orange">
             <img src="assets/image/arrow.png" alt="" class="btn-img" />
             <p class="btn-txt">Request A Quote</p>
           </div>
         </div>
         <!-- div with quick links product -->
-        <div class="flex gap-x-[26px]">
-          <div class="flex flex-col gap-y-6">
+        <div class="flex gap-x-[26px] ">
+          <div class="flex flex-col gap-y-6 w-[370px]">
             <img
               src="assets/image/logo.png"
               alt=""
               class="h-[39.06px] w-[200px]"
             />
-            <p class="w-[343px] font-primary font-normal text-sml text-white">
+            <p class="pr-[27px] font-primary font-normal text-sml text-white">
               We are on a mission to invest in new products and systems which
               will provide the Australian market with innovative solutions.
             </p>
           </div>
-          <div class="flex flex-col gap-y-5">
+          <div class="flex flex-col gap-y-5 ">
             <p class="footer-cart__heading-text">Quick Links</p>
 
             <ul class="flex flex-col gap-y-5 cursor-pointer">
@@ -675,9 +809,9 @@
             </ul>
           </div>
           <div class="flex flex-col gap-y-5">
-            <p class="footer-cart__heading-text">Product Range</p>
+            <p class="footer-cart__heading-text pr-[10px]">Product Range</p>
 
-            <ul class="flex flex-col gap-y-[20px] cursor-pointer">
+            <ul class="flex flex-col gap-y-[20px] cursor-pointer pr-[20px]">
               <li class="list-none">
                 <a href="#" class="no-underline footer-cart__body-text"
                   >Civil Drainage Products</a
@@ -701,8 +835,8 @@
             </ul>
           </div>
 
-          <div class="flex flex-col gap-y-5">
-            <p class="w-[270px] footer-cart__heading-text">
+          <div class="flex flex-col gap-y-5 w-[279px]">
+            <p class=" footer-cart__heading-text">
               Subscribe To Our Newsletter
             </p>
             <div class="flex">
@@ -727,12 +861,12 @@
         </div>
         <!-- last part of footer -->
         <div class="flex gap-x-[72px]">
-          <p class="font-primary font-normal text-sm text-white">
+          <p class="font-primary font-normal text-sm text-white ">
             © 2023 by NEPEAN Building and Infrastructure.<br />
             Weldlok® is a registered trademark of NEPEAN Building &
             Infrastructure.
           </p>
-          <p class="font-primary font-normal text-sm text-white text-right">
+          <p class="font-primary font-normal text-sm text-white text-right  w-[629px]">
             Privacy Policy | Internet Policy | Terms & Conditions of Sale |
             Conditions of Purchase
           </p>

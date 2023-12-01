@@ -4,9 +4,10 @@ var swiper = new Swiper(".mySwiper", {
   freeMode: true,
   // centeredSlides: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination1",
     clickable: true,
   },
+  mousewheel: true,
 });
 
 var swiper = new Swiper(".mySecondSwiper", {
@@ -15,4 +16,16 @@ var swiper = new Swiper(".mySecondSwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  // mousewheel: true,
+});
+
+var swiper = new Swiper(".myTestimonialSwiper", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  mousewheel: true,
+  keyboard: true,
 });
