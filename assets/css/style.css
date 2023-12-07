@@ -75,9 +75,9 @@
 }
 
 .about-wedlock__numeric-value {
-  @apply font-primary font-bold text-[2.375rem] leading-10 text-white;
+  @apply font-primary sm:font-bold sm:text-[2.375rem] sm:leading-10 text-white;
 }
 .about-wedlock__numeric-value-text {
-  @apply font-primary font-normal text-base text-white leading-[1.625rem] uppercase;
+  @apply font-primary font-normal text-base text-white sm:leading-[1.625rem] uppercase;
 }
 @tailwind utilities;

@@ -58,14 +58,14 @@
   </head>
   <body>
 
-    <!-- <header class=" border-b border-white bg-transparent z-50 absolute w-[100%] py-10 ">
+    <header class=" border-b border-white bg-transparent z-50 absolute w-[100%] py-10 ">
       <div class="container max-w-7xl mx-auto flex flex-row justify-between md:gap-x-[76px] items-center ">
         <figure>
           <img src="assets/image/logo.png"/>
         </figure>
-        <nav class="nav-links md:static absolute bg-gray-500 md:bg-transparent md:min-h-fit min-h-auto left-[auto] top-[-110%] w-full items-center text-red-500 flex md:flex-row justify-between xl:px-[76px] ">
+        <nav class="nav-links mds:static absolute bg-gray-500 mds:bg-transparent mds:min-h-fit min-h-auto left-[auto] top-[-110%] w-full items-center text-red-500 flex mds:flex-row justify-between xl:px-[76px] ">
 
-      <ul class="flex md:flex-row flex-col md:gap-x-[1.125rem] gap-[2px]">
+      <ul class="flex mds:flex-row flex-col mds:gap-x-[1.125rem] gap-[2px]">
         <li class="relative"><a href="#" class="no-underline header-cart__body-text navbar__item" >Home</a></li>
         <li class="relative">
           <a href="#" class=" no-underline header-cart__body-text navbar__item" >Our Products <i class="fa fa-caret-down"></i> </a>
@@ -85,45 +85,14 @@
         <p class="font-primary font-extrabold text-xl leading-[1.7075rem] text-white">1800 935 356</p>
       </div>
     </nav>
-    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-white sm:text-3xl text-2xl cursor-pointer md:hidden "></ion-icon>
+    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-white sm:text-4xl text-2xl cursor-pointer mds:hidden"></ion-icon>
   </div>
-  </header> -->
-  <header class=" border-b border-white bg-transparent z-50 absolute w-[100%] py-10 ">
-    <div class="container max-w-7xl mx-auto flex flex-row justify-between md:gap-x-[76px] items-center ">
-      <figure>
-        <img src="assets/image/logo.png"/>
-      </figure>
-      <nav class="nav-links md:static absolute bg-gray-500 md:bg-transparent md:min-h-fit min-h-auto left-[auto] top-[-110%] w-full items-center text-red-500 flex md:flex-row justify-between xl:px-[76px] ">
-
-    <ul class="flex md:flex-row flex-col md:gap-x-[1.125rem] gap-[2px]">
-      <li class="relative"><a href="#" class="no-underline header-cart__body-text navbar__item" >Home</a></li>
-      <li class="relative">
-        <a href="#" class=" no-underline header-cart__body-text navbar__item" >Our Products <i class="fa fa-caret-down"></i> </a>
-      </li>
-      <li class="relative">
-        <a href="#" class=" no-underline header-cart__body-text navbar__item" >Customers <i class="fa fa-caret-down"></i></a>
-      </li>
-      <li class="relative">
-        <a href="#" class=" no-underline header-cart__body-text navbar__item" >About US <i class="fa fa-caret-down"></i></a>
-      </li>
-      <li class="relative">
-        <a href="#" class=" no-underline header-cart__body-text navbar__item" >Contact Us</a>
-      </li>
-    </ul>
-    <div class=" w-[11.25rem] flex justify-between">
-      <i class="fa fa-phone border text-white border-white rounded-full p-2"></i>
-      <p class="font-primary font-extrabold text-xl leading-[1.7075rem] text-white">1800 935 356</p>
-    </div>
-  </nav>
-  <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-white sm:text-3xl text-2xl cursor-pointer md:hidden "></ion-icon>
-</div>
-</header>
-
+  </header>
 <main>
   <section class=" bg-cover bg-center h-[100vh]" style="background-image: url('assets/image/Landing-Page.png') ">
     <div class="container max-w-7xl mx-auto lg:py-[94px] px-4 py-8">
-    <div class="flex flex-col gap-y-8 justify-center lg:items-center pt-[94px] ">
-      <h1 class="font-primary font-semibold md:text-6xl text-4xl md:leading-[70px] leading-[50px] lg:text-center text-white lg:px-[5.9375rem]">
+    <div class="flex flex-col gap-y-12 mds:gap-y-8 justify-center lg:items-center pt-[160px] mds:pt-[94px] ">
+      <h1 class="font-primary font-semibold md:text-6xl text-5xl md:leading-[70px] leading-[50px] lg:text-center text-white lg:px-[5.9375rem]">
         High quality, reliable and proven products and systems
       </h1>
       <p class="font-outfit font-normal md:text-xl text-lg leading-6 md:leading-8 lg:text-center text-white">
@@ -190,7 +159,7 @@
             grating, industrial and modular handrail, steel flooring, FRP
             flooring, and drainage grates and covers.
           </p>
-          <div class="flex gap-x-[26px]">
+          <div class="flex sm:gap-x-[26px] gap-x-[10px]">
             <div class="flex flex-col gap-y-4">
               <p class="about-wedlock__numeric-value">60+</p>
               <p class="about-wedlock__numeric-value-text">
@@ -460,13 +429,13 @@
         </div>
       </div>
     </section>
-    <section class="bg-[#000000CC] bg-cover bg-center"  style="
-    background-image: url('assets/image/request-a-quote.png');
-    background-repeat: no-repeat; "
-  >
+    <section class="bg-[#000000CC] pt-2">
       <div
-        class="container px-4 py-8  mx-auto lg:py-[96px] lg:px-[99px] lg:items-center flex lg:flex-row lg:gap-x-[37px] flex-col"
-        
+        class="container px-4 py-8 bg-cover bg-center mx-auto lg:py-[96px] lg:px-[99px] lg:items-center flex lg:flex-row lg:gap-x-[37px] flex-col"
+        style="
+          background-image: url(assets/image/request-a-quote.png);
+          background-repeat: no-repeat;
+        "
       >
         <h2 class="flex flex-col capitalize section__title lg:w-[662px]">
           <span>Elevate Your Infrastructure</span>
@@ -476,7 +445,7 @@
           <p class="btn-txt"></p>
         </div> -->
         <button class="btn--orange btn-txt">
-          <img src="image/arrow.png" alt="" class="" />
+          <img src="assets/image/arrow.png" alt="" class="" />
           Request A Quote
         </button>
       </div>
@@ -894,7 +863,7 @@
                 class="py-[10px] pl-[18px] font-primary font-normal text-sm text-[#687076]"
               />
               <img
-                src="assets/image/arrow-right.png"
+                src="image/arrow-right.png"
                 alt="arrow"
                 class="p-[2px] rotate-180 bg-[#F80102]"
               />
@@ -925,5 +894,13 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+function onToggleMenu(e) {
+  e.name = e.name === "menu" ? "close" : "menu";
+  navLinks.classList.toggle("top-[100%]");
+  // console.log(e.name);
+}
+    </script>
   </body>
 </html>
