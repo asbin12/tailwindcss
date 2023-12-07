@@ -2,17 +2,20 @@
 @tailwind base;
 @tailwind components;
 
+* {
+  @apply box-border m-0 p-0;
+}
 .cart-width {
-  @apply space-y-6;
+  @apply flex flex-col gap-y-4;
 }
 .image-h-w {
-  @apply w-[276px] h-[160px];
+  @apply md:w-[276px] md:h-[160px];
 }
 .cart-middle-section {
-  @apply space-y-4;
+  @apply flex flex-col gap-y-4;
 }
 .cart-middle-section-first-p {
-  @apply w-[275px] h-[60px] font-primary font-semibold text-2xl text-white;
+  @apply w-[275px] md:h-[60px] font-primary font-semibold text-2xl text-white;
 }
 .cart-middle-section-second-p {
   @apply w-[275px] font-primary font-normal text-lg text-white;
@@ -21,7 +24,7 @@
   @apply flex flex-row gap-x-3 rounded;
 }
 .btn--orange {
-  @apply w-fit flex flex-row gap-x-3 bg-[#F80102] py-4 px-[32px] items-center;
+  @apply h-fit w-fit flex flex-row gap-x-3 bg-[#F80102] py-4 px-[32px] items-center;
 }
 .btn-img {
   @apply w-[24px] h-[24px];
@@ -30,10 +33,10 @@
   @apply font-primary font-bold text-lg text-justify text-white;
 }
 .section__top-paragraph {
-  @apply text-white font-primary text-base font-semibold text-left uppercase;
+  @apply text-white font-primary text-base font-semibold text-left  uppercase;
 }
 .section__title {
-  @apply text-white font-primary text-4.5xl font-semibold  text-left;
+  @apply text-white font-primary text-4.5xl font-semibold text-left;
 }
 .customer-cart-layout {
   @apply py-5 px-8 flex items-center gap-6 bg-white;
@@ -62,6 +65,15 @@
 .footer-cart__body-text {
   @apply font-primary font-normal text-sml text-white;
 }
+.header-cart__body-text {
+  @apply font-primary font-normal text-sml text-white;
+}
+.navbar__item {
+  @apply after:absolute after:bg-red-500 after:h-[3px] after:w-0 after:left-0 md:after:-bottom-12
+  after:-bottom-0
+  after:transition-all focus:after:w-[100%] focus:text-red-400;
+}
+
 .about-wedlock__numeric-value {
   @apply font-primary font-bold text-[2.375rem] leading-10 text-white;
 }

@@ -3,21 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Section 3</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
       /* css for swiper */
       .swiper {
         width: 100%;
         height: 100%;
+        /* position: relative; */
       }
 
       .swiper-slide {
@@ -26,12 +29,17 @@
       }
       .swiper-slide img {
         display: block;
+        margin: 0;
       }
       .swiper-pagination {
         position: static;
       }
       .swiper-pagination-bullet-active {
         background-color: #f80102;
+      }
+      .swiper-pagination-bullet {
+        height: 14px;
+        width: 14px;
       }
       .swiper-button-prev,
       .swiper-button-next {
@@ -40,40 +48,85 @@
         height: auto;
         margin: 0;
       }
+      .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background-color: #f80102;
+      }
+      .swiper-pagination1 {
+        position: relative;
+      }
     </style>
   </head>
   <body>
-    <!-- landing page -->
-    <header class=" bg-cover bg-center h-[100vh]" style="background-image: url('assets/image/Landing-Page.png') ">
-      <div class="container mx-auto relative">
-          <div class="w-[3.75rem] border border-[#F80102] absolute top-[120.49px] left-[409.5px]"></div>
-        <nav class="flex justify-between items-center px-[8.625rem] py-10 border-b border-white">
-        <img src="assets/image/logo.png"/>
-        <ul class="flex gap-x-[1.125rem]">
-          <li ><a href="#" class=" no-underline footer-cart__body-text" >Home</a></li>
-          <li>
-            <a href="#" class=" no-underline footer-cart__body-text" >Our Products <i class="fa fa-caret-down"></i> </a>
-          </li>
-          <li>
-            <a href="#" class=" no-underline footer-cart__body-text" >Customers <i class="fa fa-caret-down"></i></a>
-          </li>
-          <li>
-            <a href="#" class=" no-underline footer-cart__body-text" >About US <i class="fa fa-caret-down"></i></a>
-          </li>
-          <li>
-            <a href="#" class=" no-underline footer-cart__body-text" >Contact Us</a>
-          </li>
-        </ul>
+
+    <!-- <header class=" border-b border-white bg-transparent z-50 absolute w-[100%] py-10 ">
+      <div class="container max-w-7xl mx-auto flex flex-row justify-between md:gap-x-[76px] items-center ">
+        <figure>
+          <img src="assets/image/logo.png"/>
+        </figure>
+        <nav class="nav-links md:static absolute bg-gray-500 md:bg-transparent md:min-h-fit min-h-auto left-[auto] top-[-110%] w-full items-center text-red-500 flex md:flex-row justify-between xl:px-[76px] ">
+
+      <ul class="flex md:flex-row flex-col md:gap-x-[1.125rem] gap-[2px]">
+        <li class="relative"><a href="#" class="no-underline header-cart__body-text navbar__item" >Home</a></li>
+        <li class="relative">
+          <a href="#" class=" no-underline header-cart__body-text navbar__item" >Our Products <i class="fa fa-caret-down"></i> </a>
+        </li>
+        <li class="relative">
+          <a href="#" class=" no-underline header-cart__body-text navbar__item" >Customers <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="relative">
+          <a href="#" class=" no-underline header-cart__body-text navbar__item" >About US <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="relative">
+          <a href="#" class=" no-underline header-cart__body-text navbar__item" >Contact Us</a>
+        </li>
+      </ul>
       <div class=" w-[11.25rem] flex justify-between">
         <i class="fa fa-phone border text-white border-white rounded-full p-2"></i>
         <p class="font-primary font-extrabold text-xl leading-[1.7075rem] text-white">1800 935 356</p>
       </div>
     </nav>
-    <div class="flex flex-col gap-y-8 justify-center items-center pt-[94px] px-[138px]">
-      <h1 class="font-primary font-semibold text-6xl leading-[70px] text-center text-white px-[5.9375rem]">
+    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-white sm:text-3xl text-2xl cursor-pointer md:hidden "></ion-icon>
+  </div>
+  </header> -->
+  <header class=" border-b border-white bg-transparent z-50 absolute w-[100%] py-10 ">
+    <div class="container max-w-7xl mx-auto flex flex-row justify-between md:gap-x-[76px] items-center ">
+      <figure>
+        <img src="assets/image/logo.png"/>
+      </figure>
+      <nav class="nav-links md:static absolute bg-gray-500 md:bg-transparent md:min-h-fit min-h-auto left-[auto] top-[-110%] w-full items-center text-red-500 flex md:flex-row justify-between xl:px-[76px] ">
+
+    <ul class="flex md:flex-row flex-col md:gap-x-[1.125rem] gap-[2px]">
+      <li class="relative"><a href="#" class="no-underline header-cart__body-text navbar__item" >Home</a></li>
+      <li class="relative">
+        <a href="#" class=" no-underline header-cart__body-text navbar__item" >Our Products <i class="fa fa-caret-down"></i> </a>
+      </li>
+      <li class="relative">
+        <a href="#" class=" no-underline header-cart__body-text navbar__item" >Customers <i class="fa fa-caret-down"></i></a>
+      </li>
+      <li class="relative">
+        <a href="#" class=" no-underline header-cart__body-text navbar__item" >About US <i class="fa fa-caret-down"></i></a>
+      </li>
+      <li class="relative">
+        <a href="#" class=" no-underline header-cart__body-text navbar__item" >Contact Us</a>
+      </li>
+    </ul>
+    <div class=" w-[11.25rem] flex justify-between">
+      <i class="fa fa-phone border text-white border-white rounded-full p-2"></i>
+      <p class="font-primary font-extrabold text-xl leading-[1.7075rem] text-white">1800 935 356</p>
+    </div>
+  </nav>
+  <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-white sm:text-3xl text-2xl cursor-pointer md:hidden "></ion-icon>
+</div>
+</header>
+
+<main>
+  <section class=" bg-cover bg-center h-[100vh]" style="background-image: url('assets/image/Landing-Page.png') ">
+    <div class="container max-w-7xl mx-auto lg:py-[94px] px-4 py-8">
+    <div class="flex flex-col gap-y-8 justify-center lg:items-center pt-[94px] ">
+      <h1 class="font-primary font-semibold md:text-6xl text-4xl md:leading-[70px] leading-[50px] lg:text-center text-white lg:px-[5.9375rem]">
         High quality, reliable and proven products and systems
       </h1>
-      <p class="font-outfit font-normal text-xl leading-8 text-center text-white">
+      <p class="font-outfit font-normal md:text-xl text-lg leading-6 md:leading-8 lg:text-center text-white">
         The Weldlok brand guarantees the right solution for all customers.
       </p>
       <div class=" btn--orange  ">
@@ -82,84 +135,99 @@
       </div>
     </div>
     </div>
-    <div class="text-white flex justify-between px-[133px]">
+    <!-- <div class="text-white flex justify-between px-[133px]">
       <div class="flex flex-col relative">
        <span class="flex gap-x-4 items-center bg-white py-4 pl-[23.9px] pr-[92.3px] ">
-         <img src="assets/image/icon1.png" alt="">
+         <img src="image/icon1.png" alt="">
          <p class="font-primary font-semibold text-[1.375rem] leading-5 text-black uppercase">industrial</p>
        </span>
-       <img src="assets/image/indust.png" alt="">
-       <img src="assets/image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
+       <img src="image/indust.png" alt="">
+       <img src="image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
       </div>
       <div class="flex flex-col relative">
        <span class="flex gap-x-4 items-center bg-white py-4 pl-[23.9px] pr-[92.3px] ">
-         <img src="assets/image/icon2.png" alt="">
+         <img src="image/icon2.png" alt="">
          <p class="font-primary font-semibold text-[1.375rem] leading-5 text-black uppercase">civil</p>
        </span>
-       <img src="assets/image/civil-landing.png" alt="">
-       <img src="assets/image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
+       <img src="image/civil-landing.png" alt="">
+       <img src="image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
       </div>
       <div class="flex flex-col relative">
        <span class="flex gap-x-4 items-center bg-white py-4 pl-[23.9px] pr-[92.3px] ">
-         <img src="assets/image/icon3.png" alt="">
+         <img src="image/icon3.png" alt="">
          <p class="font-primary font-semibold text-[1.375rem] leading-5 text-black uppercase">aRCHITECTURAL</p>
        </span>
-       <img src="assets/image/archi-landing.png" alt="">
-       <img src="assets/image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
+       <img src="image/archi-landing.png" alt="">
+       <img src="image/arrow.png" alt="" class="absolute bg-[#F80102] p-[7px] left-[328px] top-[41px]">
       </div>
    
-     </div>
+     </div> -->
   </div>
-  </header>
-    <!-- section 2nd  -->
+</div>
+</section>
     <section class="bg-black">
-      <div class="container max-w-screen-xl py-24 flex gap-x-[7.8125rem] mx-auto">
-              <img src="assets/image/secondpage.png" alt="industry image" />
-            <div class="flex flex-col gap-y-8 text-white pt-[1.625rem]">
-              <div class="flex flex-col gap-y-3">
-                <p class=" section__top-paragraph ">about weldlok</p>
-                <p class="font-primary font-bold text-3xl leading-10 text-white pr-[8.25rem]">
-                  Weldlok and Balltube: <br />Trusted Australian brands for 60+
-                  years, serving infrastructure, mining, industrial, civil, and
-                  fabrication.
-                </p>
-              </div>
-                <p class="font-primary font-medium text-lg text-white pr-[8.25rem]">
-                  We are specialists in the design and supply of high quality,
-                  durable grating, industrial and modular handrail, steel flooring,
-                  FRP flooring, and drainage grates and covers.
-                </p>
-              <div class="flex gap-x-[26px] ">
-                <div class="flex flex-col gap-y-4">
-                  <p class="about-wedlock__numeric-value">60+</p>
-                  <p class="about-wedlock__numeric-value-text">years  of Experience</p>
-                </div>
-                <div class="flex flex-col gap-y-4">
-                  <p class="about-wedlock__numeric-value">450</p>
-                  <p class="about-wedlock__numeric-value-text">Qualified Employees</p>
-                </div>
-                <div class="flex flex-col gap-y-4">
-                  <p class="about-wedlock__numeric-value">800+</p>
-                  <p class="about-wedlock__numeric-value-text">satisfied customers</p>
-                </div>
-              </div>
-              <div class=" btn--orange ">
-                <img src="assets/image/arrow.png" alt="Arrow Icon" />
-                <p class="btn-txt">Learn More About Us</p>
-              </div>
+      <div
+        class="container max-w-7xl mx-auto py-8 px-4 flex flex-col justify-between lg:flex-row lg:py-24 lg:gap-x-[125px]"
+      >
+        <div class="overflow-hidden w-full">
+          <img src="assets/image/secondpage.png" alt="industry image" class="" />
+        </div>
+        <div class="flex flex-col gap-y-8 text-white">
+          <div class="flex flex-col gap-y-3">
+            <p class="section__top-paragraph">about weldlok</p>
+            <p
+              class="font-primary font-bold text-3xl leading-10 text-white xl:pr-[8.25rem]"
+            >
+              Weldlok and Balltube: <br />Trusted Australian brands for 60+
+              years, serving infrastructure, mining, industrial, civil, and
+              fabrication.
+            </p>
+          </div>
+          <p
+            class="font-primary font-medium text-lg text-white xl:pr-[8.25rem]"
+          >
+            We are specialists in the design and supply of high quality, durable
+            grating, industrial and modular handrail, steel flooring, FRP
+            flooring, and drainage grates and covers.
+          </p>
+          <div class="flex gap-x-[26px]">
+            <div class="flex flex-col gap-y-4">
+              <p class="about-wedlock__numeric-value">60+</p>
+              <p class="about-wedlock__numeric-value-text">
+                years of Experience
+              </p>
             </div>
+            <div class="flex flex-col gap-y-4">
+              <p class="about-wedlock__numeric-value">450</p>
+              <p class="about-wedlock__numeric-value-text">
+                Qualified Employees
+              </p>
+            </div>
+            <div class="flex flex-col gap-y-4">
+              <p class="about-wedlock__numeric-value">800+</p>
+              <p class="about-wedlock__numeric-value-text">
+                satisfied customers
+              </p>
+            </div>
+          </div>
+          <div class="btn--orange">
+            <img src="assets/image/arrow.png" alt="Arrow Icon" class="btn-img" />
+            <p class="btn-txt">Learn More About Us</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- section 3rd our solutions -->
     <section class="bg-gray-700">
-      <div class="container max-w-screen-xl mx-auto space-y-14 py-24">
-        <div class="space-y-3">
+      <div
+        class="container max-w-7xl mx-auto px-4 flex flex-col justify-between gap-y-14 lg:py-24 py-8"
+      >
+        <div class="flex flex-col gap-x-3">
           <p class="section__top-paragraph">our solutions</p>
           <h2 class="section__title">Our Diverse Product Range</h2>
         </div>
-        <div class="grid grid-cols-4 gap-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-6"
+        >
           <div class="cart-width">
             <img src="assets/image/img-1.png" alt="" class="image-h-w" />
             <div class="cart-middle-section">
@@ -227,31 +295,24 @@
         </div>
       </div>
     </section>
-    <!-- section 4 our customers -->
     <section
       style="background-image: url('assets/image/section-4-bg.png')"
-      class="bg-cover bg-center h-screen"
+      class="bg-cover bg-center"
     >
-      <div class="container max-w-screen-xl mx-auto space-y-14 py-24">
+      <div
+        class="container max-w-7xl mx-auto py-8 px-4 flex flex-col gap-y-14 lg:py-24"
+      >
         <div class="flex flex-col gap-x-3">
           <p class="section__top-paragraph">our customers</p>
           <h2 class="section__title">Who We Work For</h2>
         </div>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div class="customer-cart-layout">
-            <img
-              src="assets/image/user-2.png"
-              alt="EPCM"
-              class="h-[40px] w-[40px]"
-            />
+            <img src="assets/image/user-2.png" alt="EPCM" class="h-[40px] w-[40px]" />
             <p class="customer-cart__paragraph">EPCM</p>
           </div>
           <div class="customer-cart-layout">
-            <img
-              src="assets/image/engineer-1.png"
-              alt="Engineers"
-              class="h-[40px] w-[40px]"
-            />
+            <img src="assets/image/engineer-1.png" alt="Engineers" />
             <p class="customer-cart__paragraph">Engineers</p>
           </div>
           <div class="customer-cart-layout">
@@ -313,16 +374,17 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials -->
     <section class="bg-[#171717;]">
-      <div class="container max-w-screen-xl py-24 grid grid-cols-2 mx-auto">
+      <div
+        class="container max-w-7xl py-8 px-4 lg:py-24 grid grid-cols-1 gap-y-4 lg:grid-cols-2 mx-auto"
+      >
         <div class="flex flex-col gap-y-6">
           <div class="flex flex-col gap-y-3">
             <p class="section__top-paragraph">Testimonials</p>
-            <h2 class="w-[472px] section__title">
+            <h2 class="md:w-[472px] section__title">
               Your Feedback Drives Us Forward
             </h2>
-            <p class="w-[472px] font-primary font-normal text-lg text-white">
+            <p class="lg:w-[472px] font-primary font-normal text-lg text-white">
               Ut enim ad minima veniam, quis nostrum exercitationem ullam
               corporis suscipit laboriosam,
             </p>
@@ -343,18 +405,17 @@
         <div class="swiper myTestimonialSwiper">
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide bg-white py-10 pl-[60px] flex flex-col gap-y-6"
+              class="swiper-slide bg-white w-fit p-2 lg:py-10 lg:pl-[60px] flex flex-col gap-y-6"
             >
-              <p class="w-[457px] font-primary font-semibold text-lg">
+              <p
+                class="xl:w-[457px] text-left font-primary font-semibold text-lg"
+              >
                 "I have been a customer of Weldlok for over 5 years now, in this
                 time I have been nothing but pleased with the service and
                 quality. Weldlok always goes above and beyond my expectations.
               </p>
               <div class="flex gap-x-6">
-                <img
-                  src="assets/image/testi-img.png"
-                  alt="Testimonials Image"
-                />
+                <img src="assets/image/testi-img.png" alt="Testimonials Image" />
                 <div>
                   <p
                     class="font-primary font-semibold text-xl text-[#F80102] text-center"
@@ -370,18 +431,17 @@
               </div>
             </div>
             <div
-              class="swiper-slide bg-white py-10 pl-[60px] flex flex-col gap-y-6"
+              class="swiper-slide bg-white w-fit p-2 lg:py-10 lg:pl-[60px] flex flex-col gap-y-6"
             >
-              <p class="w-[457px] font-primary font-semibold text-lg">
+              <p
+                class="xl:w-[457px] text-left font-primary font-semibold text-lg"
+              >
                 "I have been a customer of Weldlok for over 5 years now, in this
                 time I have been nothing but pleased with the service and
                 quality. Weldlok always goes above and beyond my expectations.
               </p>
               <div class="flex gap-x-6">
-                <img
-                  src="assets/image/testi-img.png"
-                  alt="Testimonials Image"
-                />
+                <img src="assets/image/testi-img.png" alt="Testimonials Image" />
                 <div>
                   <p
                     class="font-primary font-semibold text-xl text-[#F80102] text-center"
@@ -400,45 +460,57 @@
         </div>
       </div>
     </section>
-     <!-- request a quote section -->
-     <section class=" bg-[#000000CC] pt-2">
-      <div class="container max-w-screen-xl py-[96px] px-[99px] items-center flex gap-x-[37px]"  style="background-image: url(https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4);">
-        <h2 class="flex flex-col capitalize section__title w-[667px]">
+    <section class="bg-[#000000CC] bg-cover bg-center"  style="
+    background-image: url('assets/image/request-a-quote.png');
+    background-repeat: no-repeat; "
+  >
+      <div
+        class="container px-4 py-8  mx-auto lg:py-[96px] lg:px-[99px] lg:items-center flex lg:flex-row lg:gap-x-[37px] flex-col"
+        
+      >
+        <h2 class="flex flex-col capitalize section__title lg:w-[662px]">
           <span>Elevate Your Infrastructure</span>
           <span class="text-[#F80102]">with our Premium Solutions!</span>
-            </h2>
-            <div class="btn--orange">
-              <img src="assets/image/arrow.png" alt="" class="btn-img" />
-              <p class="btn-txt">Request A Quote</p>
-            </div>
-</div>
-</section>
-    <!-- Featured Section -->
+        </h2>
+        <!-- <div class="btn--orange">
+          <p class="btn-txt"></p>
+        </div> -->
+        <button class="btn--orange btn-txt">
+          <img src="image/arrow.png" alt="" class="" />
+          Request A Quote
+        </button>
+      </div>
+    </section>
     <section class="bg-gray-700">
       <div
-        class="container max-w-screen-xl flex flex-col gap-y-14 mx-auto py-24"
+        class="container max-w-7xl flex flex-col gap-y-14 mx-auto lg:py-24 py-8 px-4"
       >
-        <div class="flex justify-between">
+        <div
+          class="flex justify-between lg:items-end flex-col md:flex-row gap-y-4"
+        >
           <div class="flex flex-col gap-y-4">
             <p class="section__top-paragraph">Case studies</p>
-            <h2 class="section__title">Featured Project</h2>
+            <h2 class="section__title lg:pr-[277px]">Featured Project</h2>
           </div>
-          <div class="btn--orange mt-8">
+          <div class="btn--orange">
             <img src="assets/image/arrow.png" alt="" class="btn-img" />
             <p class="btn-txt">Learn More About Us</p>
           </div>
         </div>
         <div class="swiper mySecondSwiper">
           <div class="swiper-wrapper">
-            <div class="flex gap-x-6 swiper-slide">
-              <img
-                src="assets/image/feat-project.png"
-                alt="featured_product"
-                class="h-[500px] w-[676px]"
-              />
-              <div class="px-10 flex flex-col gap-y-[27px] py-6">
+            <div class="flex flex-col lg:flex-row lg:gap-x-6 swiper-slide">
+              <div class="">
+                <img
+                  src="assets/image/feat-project.png"
+                  alt="featured_product"
+                  class="lg:h-[500px] lg:w-[676px]"
+                />
+              </div>
+
+              <div class="lg:px-10 flex flex-col gap-y-[27px] py-6">
                 <h3
-                  class="w-[396px] font-primary font-semibold text-3.5xl text-white"
+                  class="lg:w-[396px] font-primary font-semibold text-3.5xl text-white"
                 >
                   Central Taiwan Innovation & Research Park
                 </h3>
@@ -451,14 +523,14 @@
                   </div>
                   <div class="flex gap-x-4 border-b border-white py-[9px]">
                     <p class="featured-project__cart-paragraph">Clients:</p>
-                    <p class="featured-project__cart-paragraph pl-4">
+                    <p class="featured-project__cart-paragraph lg:pl-4">
                       Central Taiwan Innovation<br />
                       & Research Park
                     </p>
                   </div>
                 </div>
                 <p
-                  class="w-[388px] font-primary font-normal text-lg text-white"
+                  class="lg:w-[388px] font-primary font-normal text-lg text-white"
                 >
                   Bio-architecture Formosana, an architectural firm known for
                   their commitment to eco-friendly buildings, achieved the
@@ -470,15 +542,18 @@
                 </div>
               </div>
             </div>
-            <div class="flex gap-x-6 swiper-slide">
-              <img
-                src="assets/image/feat-project.png"
-                alt="featured_product"
-                class="h-[500px] w-[676px]"
-              />
-              <div class="px-10 flex flex-col gap-y-[27px] py-6">
+            <div class="flex flex-col lg:flex-row lg:gap-x-6 swiper-slide">
+              <div class="">
+                <img
+                  src="assets/image/feat-project.png"
+                  alt="featured_product"
+                  class="lg:h-[500px] lg:w-[676px]"
+                />
+              </div>
+
+              <div class="lg:px-10 flex flex-col gap-y-[27px] py-6">
                 <h3
-                  class="w-[396px] font-primary font-semibold text-3.5xl text-white"
+                  class="lg:w-[396px] font-primary font-semibold text-3.5xl text-white"
                 >
                   Central Taiwan Innovation & Research Park
                 </h3>
@@ -491,14 +566,14 @@
                   </div>
                   <div class="flex gap-x-4 border-b border-white py-[9px]">
                     <p class="featured-project__cart-paragraph">Clients:</p>
-                    <p class="featured-project__cart-paragraph pl-4">
+                    <p class="featured-project__cart-paragraph lg:pl-4">
                       Central Taiwan Innovation<br />
                       & Research Park
                     </p>
                   </div>
                 </div>
                 <p
-                  class="w-[388px] font-primary font-normal text-lg text-white"
+                  class="lg:w-[388px] font-primary font-normal text-lg text-white"
                 >
                   Bio-architecture Formosana, an architectural firm known for
                   their commitment to eco-friendly buildings, achieved the
@@ -510,24 +585,21 @@
                 </div>
               </div>
             </div>
+        
           </div>
           <!-- <div class="swiper-pagination"></div> -->
         </div>
         <div class="swiper-pagination"></div>
 
-        <!-- <div class="pl-[556px] flex gap-x-[10px]">
-          <div class="h-[14px] w-[14px] bg-[#F80102] rounded-full"></div>
-          <div class="h-[14px] w-[14px] rounded-full bg-[#D9D9D933]"></div>
-          <div class="h-[14px] w-[14px] rounded-full bg-[#D9D9D933]"></div>
-        </div> -->
+       
       </div>
     </section>
-     
-    <!-- our brochures section -->
     <section class="bg-[#232323]">
-      <div class="container pl-[138px] flex flex-col gap-y-14 mx-auto py-24">
+      <div
+        class="container max-w-7xl px-4 py-8 flex flex-col lg:gap-y-14 gap-y-7 mx-auto lg:py-24"
+      >
         <!-- 1st div which contains carts and our brochures and i have two box -->
-        <div class="flex gap-x-32">
+        <div class="flex lg:gap-x-32 lg:flex-row flex-col gap-">
           <!-- 2nd div as it have paragraph heading pdf-image description and buttons in two boxes-->
           <div class="flex flex-col gap-y-10">
             <!-- this div is for having paragraph heading pdf-image description -->
@@ -535,44 +607,28 @@
               <!-- this div have paragraph and heading -->
               <div class="flex flex-col gap-y-[11px]">
                 <p class="section__top-paragraph">our brochures</p>
-                <h2 class="section__title w-[467px]">
+                <h2 class="section__title lg:w-[467px]">
                   Explore and download our brochures
                 </h2>
               </div>
               <!-- this div have pdf and description -->
               <div class="flex flex-col">
-                <div class="flex gap-x-4 py-4 border-b border-white">
-                  <img
-                    src="assets/image/pdf-icon.png"
-                    alt=""
-                    class="w-[32px] h-[32px]"
-                  />
+                <div class="flex lg:gap-x-4 py-4 border-b border-white">
+                  <img src="assets/image/pdf-icon.png" alt="" />
                   <p class="our-brochures__pdf-name">
                     Mild Steel Diamond Grating
                   </p>
                 </div>
                 <div class="flex gap-x-4 py-4 border-b border-white">
-                  <img
-                    src="assets/image/pdf-icon.png"
-                    alt=""
-                    class="w-[32px] h-[32px]"
-                  />
+                  <img src="assets/image/pdf-icon.png" alt="" />
                   <p class="our-brochures__pdf-name">Mild Steel Stair Treads</p>
                 </div>
                 <div class="flex gap-x-4 py-4 border-b border-white">
-                  <img
-                    src="assets/image/pdf-icon.png"
-                    alt=""
-                    class="w-[32px] h-[32px]"
-                  />
+                  <img src="assets/image/pdf-icon.png" alt="" />
                   <p class="our-brochures__pdf-name">Aluminium Stair Treads</p>
                 </div>
                 <div class="flex gap-x-4 py-4">
-                  <img
-                    src="assets/image/pdf-icon.png"
-                    alt=""
-                    class="w-[32px] h-[32px]"
-                  />
+                  <img src="assets/image/pdf-icon.png" alt="" />
                   <p class="our-brochures__pdf-name">
                     Mastermesh Expanded Metal
                   </p>
@@ -587,7 +643,7 @@
           </div>
           <!-- second part of div -->
 
-          <div class="swiper mySwiper my-7">
+          <div class="swiper mySwiper my-7 overflow-hidden">
             <div class="swiper-wrapper flex gap-x-6">
               <div class="swiper-slide flex flex-col gap-y-6">
                 <img src="assets/image/cart-1.png" alt="" class="" />
@@ -626,47 +682,42 @@
           </div>
         </div>
         <!-- last and down div with colors div -->
-        <div class="flex pr-[129px]">
-          <div class="w-[475px] h-[5px] bg-[#F80102]"></div>
-          <div class="flex-grow bg-[#D9D9D9]"></div>
-        </div>
+        <div class="swiper-pagination1"></div>
       </div>
     </section>
-    <!-- News and Events -->
     <section class="bg-[#171717]">
       <div
-        class="container max-w-screen-xl flex flex-col gap-y-14 mx-auto py-24"
+        class="container max-w-7xl px-4 py-8 flex flex-col gap-y-14 mx-auto lg:py-24"
       >
         <!-- heading button paragraph -->
-        <div class="flex justify-between">
+        <div
+          class="flex md:flex-row justify-between md:items-center flex-col gap-y-2"
+        >
           <div class="flex flex-col gap-y-3">
             <p class="section__top-paragraph">News and events</p>
             <h2 class="section__title">Our Latest News</h2>
           </div>
-          <div class="btn--orange my-2">
-            <img src="assets/image/arrow.png" alt="" class="btn-img" />
-            <p class="btn-txt">View All News</p>
-          </div>
+          <button class="btn--orange btn-txt">
+            <img src="assets/image/arrow.png" alt="" class="" />
+            View All News
+          </button>
         </div>
         <!-- second-div -->
-        <div class="grid grid-cols-2 gap-x-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-x-6 gap-y-6">
           <div class="flex flex-col gap-y-6">
-            <img
-              src="assets/image/n&e-1.png"
-              alt="news and events"
-              class="h-[320px] w-[545px]"
-            />
+            <img src="assets/image/n&e-1.png" alt="news and events" />
+
             <!-- After image text part main div -->
             <div class="flex flex-col gap-y-[18px]">
               <div class="flex gap-x-[18px]">
                 <p class="news-and-event__box">industrial</p>
                 <p class="news-and-event__text">JULY 19, 2023</p>
               </div>
-              <h4 class="w-[531px] news-and-events__heading">
+              <h4 class="news-and-events__heading">
                 The Role Of Effective Grates And Drain Covers In Floods & Heavy
                 Rain
               </h4>
-              <p class="w-[541px] font-primary font-normal text-lg text-white">
+              <p class="font-primary font-normal text-lg text-white">
                 Floods are the most expensive disaster in Australia, causing
                 social, economic, and environmental disruptions. The direct
                 costs associated with floods estimated over the period...
@@ -680,18 +731,18 @@
           <!-- 2nd part of 2nd div -->
           <div class="flex flex-col gap-y-[42px]">
             <!-- 1st civil -->
-            <div class="flex gap-x-6">
+            <div class="flex flex-col md:flex-row md:gap-x-6 gap-y-3">
               <img
                 src="assets/image/n&e-2.png"
                 alt=""
-                class="h-[150px] w-[175px]"
+                class="md:h-[150px] md:w-[175px]"
               />
               <div class="flex flex-col gap-y-4">
                 <div class="flex gap-x-[18px]">
                   <p class="news-and-event__box">civil</p>
                   <p class="news-and-event__text">JULY 19, 2023</p>
                 </div>
-                <h4 class="w-[375px] news-and-events__heading">
+                <h4 class="xl:w-[375px] news-and-events__heading">
                   Ductile Solutions For Civil Drainage
                 </h4>
                 <div class="btn">
@@ -701,19 +752,19 @@
               </div>
             </div>
             <!-- 2nd Architectural -->
-            <div class="flex gap-x-6">
+            <div class="flex flex-col md:flex-row md:gap-x-6 gap-y-3">
               <img
                 src="assets/image/n&e-3.png"
                 alt=""
-                class="h-[150px] w-[175px]"
+                class="md:h-[150px] md:w-[175px]"
               />
               <div class="flex flex-col gap-y-4">
                 <div class="flex gap-x-[18px]">
                   <p class="news-and-event__box">Architectural</p>
                   <p class="news-and-event__text">JULY 19, 2023</p>
                 </div>
-                <h4 class="w-[375px] news-and-events__heading">
-                  Ductile Solutions For Civil Drainage
+                <h4 class="xl:w-[375px] news-and-events__heading">
+                  The Benefits Of Aluminium Stair Treads
                 </h4>
                 <div class="btn">
                   <img src="assets/image/arrow.png" alt="" class="btn-img" />
@@ -722,19 +773,19 @@
               </div>
             </div>
             <!-- 3rd industrial -->
-            <div class="flex gap-x-6">
+            <div class="flex flex-col md:flex-row md:gap-x-6 gap-y-3">
               <img
                 src="assets/image/n&e-4.png"
                 alt=""
-                class="h-[150px] w-[175px]"
+                class="md:h-[150px] md:w-[175px]"
               />
               <div class="flex flex-col gap-y-4">
                 <div class="flex gap-x-[18px]">
                   <p class="news-and-event__box">industrial</p>
                   <p class="news-and-event__text">JULY 19, 2023</p>
                 </div>
-                <h4 class="w-[375px] news-and-events__heading">
-                  Ductile Solutions For Civil Drainage
+                <h4 class="xl:w-[375px] news-and-events__heading">
+                  Understanding Stair Treads
                 </h4>
                 <div class="btn">
                   <img src="assets/image/arrow.png" alt="" class="btn-img" />
@@ -746,16 +797,18 @@
         </div>
       </div>
     </section>
-    <!-- footer section -->
+  </main>
     <footer
       style="background-image: url('assets/image/footer.png')"
       class="bg-cover bg-center bg-[#303032]"
     >
       <div
-        class="container max-w-screen-xl flex flex-col gap-y-16 mx-auto  py-24"
+        class="container max-w-7xl px-4 py-8 flex flex-col gap-y-16 mx-auto lg:py-24"
       >
         <!-- div with heading button and paragraph -->
-        <div class="flex justify-between items-center border-b border-white">
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between lg:items-center border-b border-white pb-[90px] gap-y-3"
+        >
           <div class="flex flex-col gap-y-3">
             <p class="section__top-paragraph">enquire now</p>
             <h2 class="flex flex-col capitalize section__title">
@@ -769,19 +822,16 @@
           </div>
         </div>
         <!-- div with quick links product -->
-        <div class="flex gap-x-[26px] ">
-          <div class="flex flex-col gap-y-6 w-[370px]">
-            <img
-              src="assets/image/logo.png"
-              alt=""
-              class="h-[39.06px] w-[200px]"
-            />
+        <!-- <div class="flex gap-x-[26px]"> -->
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-1 gap-y-8">
+          <div class="flex flex-col gap-y-6">
+            <img src="assets/image/logo.png" alt="" class="h-[39.06px] w-[200px]" />
             <p class="pr-[27px] font-primary font-normal text-sml text-white">
               We are on a mission to invest in new products and systems which
               will provide the Australian market with innovative solutions.
             </p>
           </div>
-          <div class="flex flex-col gap-y-5 ">
+          <div class="flex flex-col gap-y-5">
             <p class="footer-cart__heading-text">Quick Links</p>
 
             <ul class="flex flex-col gap-y-5 cursor-pointer">
@@ -835,10 +885,8 @@
             </ul>
           </div>
 
-          <div class="flex flex-col gap-y-5 w-[279px]">
-            <p class=" footer-cart__heading-text">
-              Subscribe To Our Newsletter
-            </p>
+          <div class="flex flex-col gap-y-5 xl:w-[279px]">
+            <p class="footer-cart__heading-text">Subscribe To Our Newsletter</p>
             <div class="flex">
               <input
                 type="text"
@@ -860,13 +908,15 @@
           </div>
         </div>
         <!-- last part of footer -->
-        <div class="flex gap-x-[72px]">
-          <p class="font-primary font-normal text-sm text-white ">
+        <div class="grid xl:grid-cols-2 grid-cols-1 gap-y-4">
+          <p class="font-primary font-normal text-sm text-white">
             © 2023 by NEPEAN Building and Infrastructure.<br />
             Weldlok® is a registered trademark of NEPEAN Building &
             Infrastructure.
           </p>
-          <p class="font-primary font-normal text-sm text-white text-right  w-[629px]">
+          <p
+            class="font-primary font-normal text-sm text-white lg:text-right text-left"
+          >
             Privacy Policy | Internet Policy | Terms & Conditions of Sale |
             Conditions of Purchase
           </p>
