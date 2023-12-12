@@ -80,4 +80,17 @@
 .about-wedlock__numeric-value-text {
   @apply font-primary font-normal text-base text-white sm:leading-[1.625rem] uppercase;
 }
+.popout:hover {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.popout:hover .arrow__icon {
+  @apply rotate-0 transition-all duration-500 ease-in-out;
+}
+.popout:hover .paragraph--hover {
+  @apply block;
+}
+.popout:hover .arrow__icon--position {
+  @apply top-[100px];
+}
 @tailwind utilities;
